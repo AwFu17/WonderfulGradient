@@ -1,0 +1,30 @@
+body{
+    height: 100vh;   
+}
+
+.c{
+    text-align: center;
+    margin: auto;
+    margin-top: 300px;
+    width: fit-content;
+    height: fit-content;
+    
+}
+html{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#btn{
+    font-family: 'Courier New', Courier, monospace;
+    background: rgba(216, 193, 193);
+    font-size: 17px;
+}
+
+.copy-btn{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 17px;
+    background: rgba(216, 193, 193);
+    margin-bottom: 30px;
+    margin-left: 20px;
+    
+}
