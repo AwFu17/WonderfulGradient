@@ -5,7 +5,7 @@ body{
 .c{
     text-align: center;
     margin: auto;
-    margin-top: 300px;
+    margin-top: 40%;
     width: fit-content;
     height: fit-content;
     
@@ -16,14 +16,14 @@ html{
 
 #btn{
     font-family: 'Courier New', Courier, monospace;
-    background: rgba(216, 193, 193);
+    background: rgb(104, 189, 118);
     font-size: 17px;
 }
 
 .copy-btn{
     font-family: 'Courier New', Courier, monospace;
     font-size: 17px;
-    background: rgba(216, 193, 193);
+    background: rgb(211, 88, 88);
     margin-bottom: 30px;
     margin-left: 20px;
     
