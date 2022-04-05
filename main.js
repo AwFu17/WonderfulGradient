@@ -33,6 +33,18 @@ $html.onclick = function(event){
     .then(alert(toHexColor(copyArray) + " was copied!"))}
 }
 
+$html.touchstart = function(event){
+    if (!isClick){
+    console.log(event.offsetX);
+    $x = event.offsetX;
+    for (let i = 0; i < 3; i++){
+        console.log(average($html.offsetWidth, parseInt(sHex[i], 16), parseInt(fHex[i], 16),  parseInt($x)));
+        copyArray[i] = average($html.offsetWidth, parseInt(sHex[i], 16), parseInt(fHex[i], 16),  parseInt($x));
+    }
+    navigator.clipboard.writeText(toHexColor(copyArray))
+    .then(alert(toHexColor(copyArray) + " was copied!"))}
+}
+
 function generateHexColor(){
     const rgb = new Array(3);
     for (let i = 0; i < rgb.length;  i++){
