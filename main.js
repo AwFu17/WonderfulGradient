@@ -2,7 +2,6 @@ const button = document.getElementById("btn");
 const $html = document.querySelector("html");
 let $x = 0;
 const copyArray = new Array(3);
-let isClick = false;
 
 var sHex = generateHexColor();
 var fHex = generateHexColor();
@@ -13,16 +12,10 @@ button.onclick = function(){
     fHex = generateHexColor();
     console.log(toRGB(sHex, fHex));
     document.body.style.background = toRGB(sHex, fHex);
-    isClick = !isClick;
-    setTimeout(
-        ()=>{
-            isClick = !isClick;
-        }, 1
-    );
+    
 }
  
 $html.onclick = function(event){
-    if (!isClick){
     console.log(event.offsetX);
     $x = event.offsetX;
     for (let i = 0; i < 3; i++){
@@ -30,7 +23,7 @@ $html.onclick = function(event){
         copyArray[i] = average($html.offsetWidth, parseInt(sHex[i], 16), parseInt(fHex[i], 16),  parseInt($x));
     }
     navigator.clipboard.writeText(toHexColor(copyArray))
-    .then(alert(toHexColor(copyArray) + " was copied!"))}
+    .then(alert(toHexColor(copyArray) + " was copied!"))
 }
 
 function generateHexColor(){
