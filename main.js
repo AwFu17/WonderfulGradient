@@ -30,7 +30,7 @@ $html.onclick = function(event){
         copyArray[i] = average($html.offsetWidth, parseInt(sHex[i], 16), parseInt(fHex[i], 16),  parseInt($x));
     }
     navigator.clipboard.writeText(toHexColor(copyArray))
-    .then(alert(toHexColor(copyArray) + " was copied!"))}
+    .then()}
 }
 
 $html.touchstart = function(event){
@@ -42,7 +42,7 @@ $html.touchstart = function(event){
         copyArray[i] = average($html.offsetWidth, parseInt(sHex[i], 16), parseInt(fHex[i], 16),  parseInt($x));
     }
     navigator.clipboard.writeText(toHexColor(copyArray))
-    .then(() => {})}
+    .then()}
 }
 
 function generateHexColor(){
